@@ -53,7 +53,9 @@ def predict_ticket(subject, description):
     return {"summary":summary, "category":category,"category_confidence":round(cate_conf,3),"priority":priority,"priority_confidence":round(prio_conf,3)}
 
 if __name__=="__main__":
+    # Enter the issue in subject
     subject="Microphone is not working"
+    # Enter the issue description
     description="I am experiencing an issue with my phone where my voice is not being captured properly during calls, voice messages, or recordings. People on the other end of calls are unable to hear me clearly, and in some cases my voice is completely absent even though the call is connected. The same problem occurs when using voice notes or speech-based features, making communication difficult. Restarting the device and checking permissions have not resolved the issue. This problem started recently and is affecting both personal and professional communication."
     result=predict_ticket(subject,description)
     print("Summary: ",result['summary'])
