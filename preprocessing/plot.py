@@ -1,0 +1,40 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('Data/customer_support_tickets_10k_balanced.csv')
+plt.figure()
+df['category'].value_counts().plot(kind='bar')
+plt.title('Category Distibution')
+plt.xlabel('Category')
+plt.ylabel('count')
+plt.tight_layout()
+plt.savefig('preprocessing/plots/category_distribution.png')
+plt.show()
+
+plt.figure()
+category_no=df["category"].value_counts()
+plt.pie(category_no,labels=category_no.index,autopct='%1.1f%%',startangle=140)
+plt.title('Category Proportion')
+plt.axis('equal')
+plt.savefig('preprocessing/plots/category_proportion.png')
+plt.show()
+
+plt.figure()
+df['priority'].value_counts().plot(kind='bar',color='orange')
+plt.title('Priority Distribution')
+plt.xlabel('Priority')
+plt.ylabel('count')
+plt.tight_layout()
+plt.savefig('preprocessing/plots/priority_distribution.png')
+plt.show()
+
+df['text_length']=(df['subject']+" "+df['description']).str.split().apply(len)
+plt.figure()
+plt.hist(df['text_length'], bins=50)
+plt.title('TLD')
+plt.xlabel('No. of words')
+plt.ylabel('frequency')
+plt.tight_layout()
+plt.savefig("preprocessing/plots/text_length_distribution.png")
+plt.show()
+
