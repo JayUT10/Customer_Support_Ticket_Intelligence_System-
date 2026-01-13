@@ -122,7 +122,7 @@ The following comparison was performed using the same subject and description fo
 
 Follow the steps below to run the prediction system and get the complaint **summary**, **category**, and **priority**.
 #### Step 1: Open the Prediction File
-Open the prediction script (for example `predict.py` or `predict_svm.py`) in your code editor.
+Open the prediction script (for example `predict_logistic_regression.py` or `predict_svm.py`) in your code editor.
 
 #### Step 2: Enter Complaint Details
 Inside the file, locate the `__main__` block and enter the complaint details in the `subject` and `description` variables.
@@ -137,7 +137,7 @@ subject: Short title of the complaint
 description: Detailed explanation of the issue
 #### Step 3: Run the Script
 Run the file using the command line:
-python `predict.py`
+python `predict_logistic_regression.py`
 or (for SVM):
 python `predict_svm.py`
 #### Step 4: View the Output
@@ -147,8 +147,10 @@ The predicted category
 The predicted priority
 The confidence score for each prediction
 #### Example output:
+```
 Summary: Experiencing issue phone voice captured properly during calls
 Category: Microphone Issue | Confidence: 0.82
 Priority: Low | Confidence: 0.46
+```
 #### Step 5: Try Different Complaints
 You can test the system by changing the subject and description values to simulate different customer issues such as screen, camera, battery, or audio problems.
