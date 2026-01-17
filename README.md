@@ -81,7 +81,7 @@ The system achieved 1.00 (100%) accuracy for category classification due to clea
 ![Logistic Regression Priority](preprocessing/plots/priority_confusion_matrix.png)
 ![Logistic Regression Category](preprocessing/plots/category_confusion_matrix.png)
 
-### Logistic Regression vs Support Vector Machine
+### 3.2 Logistic Regression vs Support Vector Machine
 
 The following comparison was performed using the same subject and description for each test case. This ensures a fair evaluation of Logistic Regression and Support Vector Machine (SVM) models under identical input conditions.
 
