@@ -13,6 +13,12 @@ The approach followed in this project focuses on building an end-to-end AI-based
 
 A labeled ten thousand customer support ticket synthetic dataset was used, containing ticket id, customer name, categories, complaint subjects, descriptions, status and priority levels. The dataset was analyzed to understand text length, class distribution, and data quality before applying any preprocessing steps.
 
+- Categories
+1. Motherboard Issue    5. Battery Issue
+2. Screen Issue         6. Microphone Issue
+3. Camera Issue         7. Speaker Issue
+4. Button Issue
+
 ![Category Proportion](preprocessing/plots/category_proportion.png)
 ![Priority Distribution](preprocessing/plots/priority_distribution.png)
 
@@ -67,9 +73,7 @@ The following metrics were used to measure model performance:
 The system achieved 1.00 (100%) accuracy for category classification due to clean and well-defined labels, while priority prediction achieved 0.74 (74%) accuracy due to the subjective and context-dependent nature of category levels.
 
 ![Logistic Regression Evaluation Metics Category](preprocessing/plots/Screenshot%202026-01-11%20150758.png)
-Category Accuracy
 ![Logistic Regression Evaluation Priority](preprocessing/plots/Screenshot%202026-01-11%20150816.png)
-Priority Accuracy
 ![Logistic Regression Priority](preprocessing/plots/priority_confusion_matrix.png)
 ![Logistic Regression Category](preprocessing/plots/category_confusion_matrix.png)
 
