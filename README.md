@@ -13,7 +13,7 @@ The approach followed in this project focuses on building an end-to-end AI-based
 
 A labeled ten thousand customer support ticket synthetic dataset was used, containing ticket id, customer name, categories, complaint subjects, descriptions, status and priority levels. The dataset was analyzed to understand text length, class distribution, and data quality before applying any preprocessing steps.
 
-|Categories|
+|Category|
 |----------|
 |Motherboard Issue|
 |Screen Issue|
