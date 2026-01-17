@@ -64,10 +64,12 @@ The following metrics were used to measure model performance:
 
 #### Logistic Regression Model (Final Model)
 
-The system achieved 1.00 (100%) accuracy for category classification due to clean and well-defined labels, while priority prediction achieved 0.74 (74%) accuracy due to the subjective and context-dependent nature of urgency levels.
+The system achieved 1.00 (100%) accuracy for category classification due to clean and well-defined labels, while priority prediction achieved 0.74 (74%) accuracy due to the subjective and context-dependent nature of category levels.
 
 ![Logistic Regression Evaluation Metics Category](preprocessing/plots/Screenshot%202026-01-11%20150758.png)
+Category Accuracy
 ![Logistic Regression Evaluation Priority](preprocessing/plots/Screenshot%202026-01-11%20150816.png)
+Priority Accuracy
 ![Logistic Regression Priority](preprocessing/plots/priority_confusion_matrix.png)
 ![Logistic Regression Category](preprocessing/plots/category_confusion_matrix.png)
 
